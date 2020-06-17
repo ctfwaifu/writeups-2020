@@ -50,6 +50,7 @@ and then I reversed the functions
 ## fail attempt
 ```python
 def ss_reversed():
+	# key = 'H3ll0_tbh_Th15_15_7h3_k3y_F0r_7hi5_ch4ll3ng3_atb'
 	key = '5Nzwbdkvm1VF1X3zc8d6kPd7MMTgSW9Dv1otpwkbPyggHqk5CaEHYwCD14vBdc3w86'
 	final = [b'03367345', b'46c39f41c3a8', b'1544651a', b'03451b28', b'77c3aac3a275', b'c39e16c3b6c3b2', 391124763, 121061897, 1396123432, 389813723487, 295339258400, 131682038629031]
 	lf = 48                    # known flag length
