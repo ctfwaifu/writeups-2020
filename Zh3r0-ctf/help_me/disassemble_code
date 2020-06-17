@@ -1,0 +1,275 @@
+  1           0 LOAD_CONST               0 (0)
+              2 LOAD_CONST               1 (('flag', 'key'))
+              4 IMPORT_NAME              0 (flag)
+              6 IMPORT_FROM              0 (flag)
+              8 STORE_NAME               0 (flag)
+             10 IMPORT_FROM              1 (key)
+             12 STORE_NAME               1 (key)
+             14 POP_TOP
+
+  2          16 LOAD_CONST               0 (0)
+             18 LOAD_CONST               2 (('hexlify',))
+             20 IMPORT_NAME              2 (binascii)
+             22 IMPORT_FROM              3 (hexlify)
+             24 STORE_NAME               3 (hexlify)
+             26 POP_TOP
+
+  3          28 LOAD_CONST               0 (0)
+             30 LOAD_CONST               3 (('*',))
+             32 IMPORT_NAME              4 (Crypto.Util.number)
+             34 IMPORT_STAR
+
+  6          36 LOAD_NAME                5 (len)
+             38 LOAD_NAME                0 (flag)
+             40 CALL_FUNCTION            1
+             42 LOAD_CONST               4 (48)
+             44 COMPARE_OP               2 (==)
+             46 POP_JUMP_IF_TRUE        52
+             48 LOAD_GLOBAL              6 (AssertionError)
+             50 RAISE_VARARGS            1
+
+  8     >>   52 LOAD_CONST               5 ('zh3r0{l0l_thi5_i5_n0t_th3_fl4g}')
+             54 STORE_NAME               7 (fake_flag)
+
+ 10          56 LOAD_CONST               6 (<code object xor at 0x7efc8d5ac030, file "xor.py", line 10>)
+             58 LOAD_CONST               7 ('xor')
+             60 MAKE_FUNCTION            0
+             62 STORE_NAME               8 (xor)
+
+ 13          64 LOAD_CONST               8 (<code object first_half at 0x7efc8d5ac450, file "xor.py", line 13>)
+             66 LOAD_CONST               9 ('first_half')
+             68 MAKE_FUNCTION            0
+             70 STORE_NAME               9 (first_half)
+
+ 16          72 LOAD_CONST              10 (<code object second_half at 0x7efc8d5ac5b0, file "xor.py", line 16>)
+             74 LOAD_CONST              11 ('second_half')
+             76 MAKE_FUNCTION            0
+             78 STORE_NAME              10 (second_half)
+
+ 19          80 LOAD_CONST              12 (<code object encrypt at 0x7efc8d5ac920, file "xor.py", line 19>)
+             82 LOAD_CONST              13 ('encrypt')
+             84 MAKE_FUNCTION            0
+             86 STORE_NAME              11 (encrypt)
+
+ 27          88 LOAD_NAME               12 (print)
+             90 LOAD_NAME               11 (encrypt)
+             92 LOAD_NAME                1 (key)
+             94 LOAD_NAME                0 (flag)
+             96 CALL_FUNCTION            2
+             98 CALL_FUNCTION            1
+            100 POP_TOP
+            102 LOAD_CONST              14 (None)
+            104 RETURN_VALUE
+
+Disassembly of <code object xor at 0x7efc8d5ac030, file "xor.py", line 10>:
+ 11           0 LOAD_GLOBAL              0 (chr)
+              2 LOAD_GLOBAL              1 (ord)
+              4 LOAD_FAST                0 (str1)
+              6 LOAD_FAST                2 (num)
+              8 BINARY_SUBSCR
+             10 CALL_FUNCTION            1
+             12 LOAD_FAST                2 (num)
+             14 BINARY_ADD
+             16 LOAD_GLOBAL              1 (ord)
+             18 LOAD_FAST                1 (str2)
+             20 LOAD_FAST                2 (num)
+             22 BINARY_SUBSCR
+             24 CALL_FUNCTION            1
+             26 BINARY_XOR
+             28 CALL_FUNCTION            1
+             30 RETURN_VALUE
+
+Disassembly of <code object first_half at 0x7efc8d5ac450, file "xor.py", line 13>:
+ 14           0 LOAD_CLOSURE             0 (half_flag)
+              2 BUILD_TUPLE              1
+              4 LOAD_CONST               1 (<code object <listcomp> at 0x7efc8d5ac3a0, file "xor.py", line 14>)
+              6 LOAD_CONST               2 ('first_half.<locals>.<listcomp>')
+              8 MAKE_FUNCTION            8 (closure)
+             10 LOAD_GLOBAL              0 (range)
+             12 LOAD_CONST               3 (0)
+             14 LOAD_GLOBAL              1 (len)
+             16 LOAD_DEREF               0 (half_flag)
+             18 CALL_FUNCTION            1
+             20 LOAD_CONST               4 (4)
+             22 CALL_FUNCTION            3
+             24 GET_ITER
+             26 CALL_FUNCTION            1
+             28 RETURN_VALUE
+
+Disassembly of <code object <listcomp> at 0x7efc8d5ac3a0, file "xor.py", line 14>:
+ 14           0 BUILD_LIST               0
+              2 LOAD_FAST                0 (.0)
+        >>    4 FOR_ITER                28 (to 34)
+              6 STORE_FAST               1 (i)
+              8 LOAD_GLOBAL              0 (hexlify)
+             10 LOAD_DEREF               0 (half_flag)
+             12 LOAD_FAST                1 (i)
+             14 LOAD_FAST                1 (i)
+             16 LOAD_CONST               0 (4)
+             18 BINARY_ADD
+             20 BUILD_SLICE              2
+             22 BINARY_SUBSCR
+             24 LOAD_METHOD              1 (encode)
+             26 CALL_METHOD              0
+             28 CALL_FUNCTION            1
+             30 LIST_APPEND              2
+             32 JUMP_ABSOLUTE            4
+        >>   34 RETURN_VALUE
+
+Disassembly of <code object second_half at 0x7efc8d5ac5b0, file "xor.py", line 16>:
+ 17           0 LOAD_CLOSURE             0 (half_flag)
+              2 BUILD_TUPLE              1
+              4 LOAD_CONST               1 (<code object <listcomp> at 0x7efc8d5ac500, file "xor.py", line 17>)
+              6 LOAD_CONST               2 ('second_half.<locals>.<listcomp>')
+              8 MAKE_FUNCTION            8 (closure)
+             10 LOAD_GLOBAL              0 (range)
+             12 LOAD_CONST               3 (0)
+             14 LOAD_GLOBAL              1 (len)
+             16 LOAD_DEREF               0 (half_flag)
+             18 CALL_FUNCTION            1
+             20 LOAD_CONST               4 (4)
+             22 CALL_FUNCTION            3
+             24 GET_ITER
+             26 CALL_FUNCTION            1
+             28 RETURN_VALUE
+
+Disassembly of <code object <listcomp> at 0x7efc8d5ac500, file "xor.py", line 17>:
+ 17           0 BUILD_LIST               0
+              2 LOAD_FAST                0 (.0)
+        >>    4 FOR_ITER                28 (to 34)
+              6 STORE_FAST               1 (i)
+              8 LOAD_GLOBAL              0 (bytes_to_long)
+             10 LOAD_DEREF               0 (half_flag)
+             12 LOAD_FAST                1 (i)
+             14 LOAD_FAST                1 (i)
+             16 LOAD_CONST               0 (4)
+             18 BINARY_ADD
+             20 BUILD_SLICE              2
+             22 BINARY_SUBSCR
+             24 LOAD_METHOD              1 (encode)
+             26 CALL_METHOD              0
+             28 CALL_FUNCTION            1
+             30 LIST_APPEND              2
+             32 JUMP_ABSOLUTE            4
+        >>   34 RETURN_VALUE
+
+Disassembly of <code object encrypt at 0x7efc8d5ac920, file "xor.py", line 19>:
+ 20           0 BUILD_LIST               0
+              2 STORE_FAST               2 (final)
+
+ 21           4 LOAD_CLOSURE             0 (flag)
+              6 LOAD_CLOSURE             1 (key)
+              8 BUILD_TUPLE              2
+             10 LOAD_CONST               1 (<code object <listcomp> at 0x7efc8d5ac660, file "xor.py", line 21>)
+             12 LOAD_CONST               2 ('encrypt.<locals>.<listcomp>')
+             14 MAKE_FUNCTION            8 (closure)
+             16 LOAD_GLOBAL              0 (range)
+             18 LOAD_GLOBAL              1 (len)
+             20 LOAD_DEREF               0 (flag)
+             22 CALL_FUNCTION            1
+             24 LOAD_CONST               3 (2)
+             26 BINARY_FLOOR_DIVIDE
+             28 CALL_FUNCTION            1
+             30 GET_ITER
+             32 CALL_FUNCTION            1
+             34 STORE_FAST               3 (first_xor)
+
+ 22          36 LOAD_CLOSURE             0 (flag)
+             38 LOAD_CLOSURE             1 (key)
+             40 BUILD_TUPLE              2
+             42 LOAD_CONST               4 (<code object <listcomp> at 0x7efc8d5ac7c0, file "xor.py", line 22>)
+             44 LOAD_CONST               2 ('encrypt.<locals>.<listcomp>')
+             46 MAKE_FUNCTION            8 (closure)
+             48 LOAD_GLOBAL              0 (range)
+             50 LOAD_GLOBAL              1 (len)
+             52 LOAD_DEREF               0 (flag)
+             54 CALL_FUNCTION            1
+             56 LOAD_CONST               3 (2)
+             58 BINARY_FLOOR_DIVIDE
+             60 CALL_FUNCTION            1
+             62 GET_ITER
+             64 CALL_FUNCTION            1
+             66 STORE_FAST               4 (second_xor)
+
+ 23          68 LOAD_FAST                2 (final)
+             70 LOAD_GLOBAL              2 (first_half)
+             72 LOAD_CONST               5 ('')
+             74 LOAD_METHOD              3 (join)
+             76 LOAD_FAST                3 (first_xor)
+             78 CALL_METHOD              1
+             80 CALL_FUNCTION            1
+             82 INPLACE_ADD
+             84 STORE_FAST               2 (final)
+
+ 24          86 LOAD_FAST                2 (final)
+             88 LOAD_GLOBAL              4 (second_half)
+             90 LOAD_CONST               5 ('')
+             92 LOAD_METHOD              3 (join)
+             94 LOAD_FAST                4 (second_xor)
+             96 CALL_METHOD              1
+             98 CALL_FUNCTION            1
+            100 INPLACE_ADD
+            102 STORE_FAST               2 (final)
+
+ 25         104 LOAD_FAST                2 (final)
+            106 RETURN_VALUE
+
+Disassembly of <code object <listcomp> at 0x7efc8d5ac660, file "xor.py", line 21>:
+ 21           0 BUILD_LIST               0
+              2 LOAD_FAST                0 (.0)
+        >>    4 FOR_ITER                48 (to 54)
+              6 STORE_FAST               1 (i)
+              8 LOAD_GLOBAL              0 (xor)
+             10 LOAD_DEREF               0 (flag)
+             12 LOAD_CONST               0 (None)
+             14 LOAD_GLOBAL              1 (len)
+             16 LOAD_DEREF               0 (flag)
+             18 CALL_FUNCTION            1
+             20 LOAD_CONST               1 (2)
+             22 BINARY_FLOOR_DIVIDE
+             24 BUILD_SLICE              2
+             26 BINARY_SUBSCR
+             28 LOAD_DEREF               1 (key)
+             30 LOAD_GLOBAL              1 (len)
+             32 LOAD_DEREF               1 (key)
+             34 CALL_FUNCTION            1
+             36 LOAD_CONST               1 (2)
+             38 BINARY_FLOOR_DIVIDE
+             40 LOAD_CONST               0 (None)
+             42 BUILD_SLICE              2
+             44 BINARY_SUBSCR
+             46 LOAD_FAST                1 (i)
+             48 CALL_FUNCTION            3
+             50 LIST_APPEND              2
+             52 JUMP_ABSOLUTE            4
+        >>   54 RETURN_VALUE
+
+Disassembly of <code object <listcomp> at 0x7efc8d5ac7c0, file "xor.py", line 22>:
+ 22           0 BUILD_LIST               0
+              2 LOAD_FAST                0 (.0)
+        >>    4 FOR_ITER                48 (to 54)
+              6 STORE_FAST               1 (i)
+              8 LOAD_GLOBAL              0 (xor)
+             10 LOAD_DEREF               0 (flag)
+             12 LOAD_GLOBAL              1 (len)
+             14 LOAD_DEREF               0 (flag)
+             16 CALL_FUNCTION            1
+             18 LOAD_CONST               0 (2)
+             20 BINARY_FLOOR_DIVIDE
+             22 LOAD_CONST               1 (None)
+             24 BUILD_SLICE              2
+             26 BINARY_SUBSCR
+             28 LOAD_DEREF               1 (key)
+             30 LOAD_CONST               1 (None)
+             32 LOAD_GLOBAL              1 (len)
+             34 LOAD_DEREF               1 (key)
+             36 CALL_FUNCTION            1
+             38 LOAD_CONST               0 (2)
+             40 BINARY_FLOOR_DIVIDE
+             42 BUILD_SLICE              2
+             44 BINARY_SUBSCR
+             46 LOAD_FAST                1 (i)
+             48 CALL_FUNCTION            3
+             50 LIST_APPEND              2
+             52 JUMP_ABSOLUTE            4
+        >>   54 RETURN_VALUE
