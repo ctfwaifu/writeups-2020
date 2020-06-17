@@ -47,7 +47,7 @@ if len(flag) == 48:
 	print(encrypt(key, flag))
 ```
 and then I reversed the functions
-## first fail attempt
+## fail attempt
 ```python
 def ss_reversed():
 	key = '5Nzwbdkvm1VF1X3zc8d6kPd7MMTgSW9Dv1otpwkbPyggHqk5CaEHYwCD14vBdc3w86'
