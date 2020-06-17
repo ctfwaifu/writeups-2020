@@ -37,8 +37,8 @@ if len(flag) == 48:
 
 	def encrypt(key, flag):
 		final = []
-		first_xor = [  xor(flag[None:len(flag)//2], key[len(key)//2:None], i) for i in range(len(flag)//2)]
-		second_xor = [ xor(flag[len(flag)//2:None], key[None:len(key)//2], i) for i in range(len(flag)//2)]
+		first_xor = [  xor(flag[:len(flag)//2], key[len(key)//2:], i) for i in range(len(flag)//2)]
+		second_xor = [ xor(flag[len(flag)//2:], key[:len(key)//2], i) for i in range(len(flag)//2)]
 		final += first_half(''.join(first_xor))
 		final += second_half(''.join(second_xor))
 
