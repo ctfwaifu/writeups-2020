@@ -2,3 +2,4 @@
 
 # writeups for zh3r0-ctf 2020
 - snakes_everywhere (rev eng) - beginner level
+- help_me (crypto, rev eng) - intermediate level
