@@ -1,4 +1,4 @@
-> aaa
+> sorry for the broken links and lack of explaination, need some time to complete the writeups
 # help_me
 ### Whit3_D3vi1 - (discord) Whit3_D3vi1#3208
 
