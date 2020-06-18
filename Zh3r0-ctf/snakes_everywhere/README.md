@@ -1,12 +1,12 @@
 > sorry for the broken links and lack of explaination, need some time to complete the writeups
 # snakes_everywhere
-### {author_name}
+Whit3_D3vi1
 
 category: rev-eng
 
-[desciption]
+Can a snake go backwards
 
-files: py_dis1, snake.txt
+files: [py_dis1](https://github.com/ctfwaifu/writeups-2020/tree/master/Zh3r0-ctf/snakes_everywhere/py_dis1), [snake.txt](https://github.com/ctfwaifu/writeups-2020/tree/master/Zh3r0-ctf/snakes_everywhere/snake.txt)
 
 ## process
 At first glance at `snake.txt` it was clear that it was some encrypted text, which I assumed to be the complete flag
