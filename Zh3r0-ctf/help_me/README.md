@@ -8,7 +8,7 @@ Hi, there i lost my flag and the source code which encrypted it :( Now i have on
 
 Hint: here is the key 5Nzwbdkvm1VF1X3zc8d6kPd7MMTgSW9Dv1otpwkbPyggHqk5CaEHYwCD14vBdc3w86
 
-files: [ciphertext.txt](https://github.com/ctfwaifu/writeups-2020/tree/master/Zh3r0-ctf/help_me/ciphertext.txt), [disassembled_code](https://github.com/ctfwaifu/writeups-2020/tree/master/Zh3r0-ctf/help_me/disassembled_code)
+files: [ciphertext.txt](https://github.com/ctfwaifu/writeups-2020/tree/master/Zh3r0-ctf/help_me/ciphertext.txt), [disassembled_code](https://github.com/ctfwaifu/writeups-2020/tree/master/Zh3r0-ctf/help_me/disassemble_code)
 
 ## process
 This challenge is pretty similar to `snakes_everywhere`.
