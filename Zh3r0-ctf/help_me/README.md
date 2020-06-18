@@ -1,14 +1,14 @@
 > sorry for the broken links and lack of explaination, need some time to complete the writeups
 # help_me
-### Whit3_D3vi1 - (discord) Whit3_D3vi1#3208
+Whit3_D3vi1 - (discord) Whit3_D3vi1#3208
 
 category: crypto, rev-eng
 
-[description]
+Hi, there i lost my flag and the source code which encrypted it :( Now i have only the encrypted text and the disassembly code. Help me get the flag.
 
-hint: key is 5Nzwbdkvm1VF1X3zc8d6kPd7MMTgSW9Dv1otpwkbPyggHqk5CaEHYwCD14vBdc3w86
+Hint: here is the key 5Nzwbdkvm1VF1X3zc8d6kPd7MMTgSW9Dv1otpwkbPyggHqk5CaEHYwCD14vBdc3w86
 
-files: ciphertext.txt, disassembled_code
+files: [ciphertext.txt](https://github.com/ctfwaifu/writeups-2020/tree/master/Zh3r0-ctf/help_me/ciphertext.txt), [disassembled_code](https://github.com/ctfwaifu/writeups-2020/tree/master/Zh3r0-ctf/help_me/disassembled_code)
 
 ## process
 This challenge is pretty similar to `snakes_everywhere`.
